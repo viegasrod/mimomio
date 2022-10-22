@@ -1,95 +1,157 @@
 body {
-    max-width: 800px;
-    min-width: 600px;
-    margin: auto;
-    background-color: #FFF9F5;
-    color: #36454F;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  /*max-width: 800px;
+  min-width: 600px;*/
+  margin: auto;
+  color: #3878a3;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(skyBlue,mistyRose, aliceBlue, skyBlue);
+}
+
+.heading {
+  text-align: center;
+}
+
+.navContainer {
+  background: linear-gradient(skyBlue, #c2c2c2, skyBlue);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navLogo {
+  margin-right: 10px;
+  text-align: left;
+ 
+}
+
+a {
+  margin: 10px;
+  color: #36454f;
+  text-decoration: none;
+}
+
+.headlineContainer {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.headlineImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 5%;
+  position: relative;
+  float: left;
+}
+
+.headlineItem h3 {
+  margin: 15px 5px 5px 5px;
+}
+
+.column {
+  max-height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colItem {
+  width: 95%;
+  margin: 8px;
+  border: 2px solid #f0eeee;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.navItem {
+  width: 320px;
+}
+
+#navLogo img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.headlineItem {
+  height: 100px;
+  width: 45%;
+  margin: 10px;
+  border: 2px solid #c0c0c0;
+  border-radius: 4px;
+  background-color: #c2c2c2;
+}
+
+.headlineItem:hover,
+.colItem:hover {
+  cursor: pointer;
+}
+
+.colItem h4 {
+  margin: 5px;
+}
+
+.colItem p {
+  margin: 3px;
+}
+h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif ont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Helvetica Neue",
+    Helvetica, sans-serif;
+}
+footer {
+  background:linear-gradient(skyBlue,#c2c2c2,skyblue);
+}
+
+img 2{
+  background: linear-gradient(pink,plum);
+  padding: 10px;
+  height:125px;
+  width:200px;
+  border-radius: 20px;
+ }
+ 
+ body {
+  text-align: center;
+
   
-  .heading {
-    text-align: center;
-  }
-  
-  .navContainer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  #navPhoto {
-    margin-right: 10px;
-    text-align: right;
-  }
-  
-  a {
-    margin: 10px;
-    color: #36454F;
-    text-decoration: none;
-  }
-  
-  .headlineContainer {
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-content:space-around;
-  }
-  
-  .headlineImage {
-    width: 100px;
-    height: 100px;
-    border-radius: 5%;
-    position: relative;
-    float: left;
-  }
-  
-  .headlineItem h3 {
-    margin: 15px 5px 5px 5px;
-  }
-  
-  .column {
-    max-height: 250px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .colItem {
-    width: 95%;
-    margin: 8px;
-    border: 2px solid #F0EEEE;
-    border-radius: 2px;
-  }
-  
-  .navItem {
-    width: 220px;
-  }
-  
-  #navPhoto img {
-    width: 50px;
-    border-radius: 50%;
-  }
-  
-  .headlineItem {
-    height: 100px;
-    width: 45%;
-    margin: 10px;
-    border: 2px solid #C0C0C0;
-    border-radius: 4px;
-    background-color: #C2C2C2;
-  }
-  
-  .headlineItem:hover,
-  .colItem:hover {
-    cursor: pointer;
-  }
-  
-  .colItem h4 {
-    margin: 5px;
-  }
-  
-  .colItem p {
-    margin: 3px;
-  }
+}
+ button {
+  background: linear-gradient(135deg,                                         );
+  padding: 50px;
+  border-radius: 10px;
+ }
+ 
+ /*body {
+  text-align: center;
+ }*/
+.grid-container{
+display: grid;
+background-color: cornsilk;
+grid-template-columns: auto auto auto;
+}
+.grid-container div{
+  background-color: papayawhip;
+  text-align: center;
+  color: skyblue;
+  border: 1px solid black;
+}
+img{
+width: 100%;
+padding: 5px;
+}
+footer{
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+}
+header{
+  position: fixed;
+  top: 0;
+}
